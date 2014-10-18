@@ -1,4 +1,4 @@
-.card-container {perspective: 1000;}
+.card-container {perspective: 100;}
 .card-container:hover .sides {transform: rotateY(180deg);}
 .card-container, .front, .back {
   width: 320px;
@@ -7,7 +7,7 @@
 .sides {
   position: relative;
   transform-style: preserve-3d;
-  transition: 0.6s;
+  transition: .6s;
 }
 .front,
 .back {
@@ -19,11 +19,11 @@
 .front {
   z-index: 2;
   background: url(http://static.tvtropes.org/pmwiki/pub/images/4567_400x600.jpg) no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   transform: rotateY(0deg);
 }
 .back {
   background: url(http://i1-news.softpedia-static.com/images/news2/Superman-Explained-Why-the-Red-Undies-over-the-Costume-2.jpg) no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   transform: rotateY(180deg);
 }
